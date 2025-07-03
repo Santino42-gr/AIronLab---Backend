@@ -32,3 +32,14 @@ Content-Type: application/json
 
 ### Получить все заявки (для админки)
 GET http://localhost:3000/api/contact
+### Новая статья
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Название новой статьи",
+  "content": "Полный текст статьи...",
+  "excerpt": "Краткое описание",
+  "author": "AIronLab",
+  "status": "published"
+}
