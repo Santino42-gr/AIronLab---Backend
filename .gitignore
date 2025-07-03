@@ -1,0 +1,65 @@
+# Зависимости
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Переменные окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Логи
+logs/
+*.log
+
+# Временные файлы
+temp/
+tmp/
+.tmp/
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# IDE файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Папка для загрузок (если будет использоваться)
+uploads/
+
+# Файлы сборки
+dist/
+build/
+
+# Тестовые файлы
+coverage/
+.nyc_output/
+
+# База данных (локальная)
+*.sqlite
+*.sqlite3
+*.db
+
+# Бэкапы
+*.backup
+*.bak
+
+# SSL сертификаты
+*.pem
+*.key
+*.crt
+
+# PM2
+.pm2/
+pids/
+
+# Локальные настройки
+config.local.js
+settings.local.json 

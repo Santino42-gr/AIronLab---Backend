@@ -1,0 +1,34 @@
+### Проверка работы сервера
+GET http://localhost:3000
+
+### Получить все статьи (пока пустой список)
+GET http://localhost:3000/api/posts
+
+### Создать тестовую статью
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Добро пожаловать в мой блог!",
+  "content": "Это моя первая статья в новом блоге. Здесь я буду делиться интересными мыслями и идеями. Бэкенд работает отлично!",
+  "excerpt": "Первая статья в блоге с рассказом о запуске проекта",
+  "author": "AIronLab",
+  "status": "published"
+}
+
+### Получить статью по ID (замени 1 на актуальный ID)
+GET http://localhost:3000/api/posts/1
+
+### Отправить тестовую заявку
+POST http://localhost:3000/api/contact
+Content-Type: application/json
+
+{
+  "name": "Тестовый Пользователь",
+  "email": "test@example.com",
+  "message": "Привет! Это тестовая заявка для проверки работы формы обратной связи. Все работает отлично!",
+  "subject": "Тестирование формы обратной связи"
+}
+
+### Получить все заявки (для админки)
+GET http://localhost:3000/api/contact
